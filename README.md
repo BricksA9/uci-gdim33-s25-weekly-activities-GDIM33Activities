@@ -16,9 +16,9 @@ Zom shares a love for singleplayer exploration-oriented games like Death Strandi
 I talked with Agnes, who has an interest in RPG action-oriented games. She mentioned Baldur's Gate 3, which has both RPG elements and a big focus on exploration. In my mood board I included a few RPG games, notably Honkai: Star Rail and Genshin. 
 
 ### Activity 2
-Genre:
+Genre:\
 Horror, with cel-shaded aesthetics.
-Core mechanics and gameplay loop:
+Core mechanics and gameplay loop:\
 Explore the environment. This is a loop. Essentially there will be ‘rounds’ where you have to survive against a robot. You enter a room, have a certain amount of time to prepare, before a robot is unleashed on you. Materials are randomized–while the layout of the environment will be the same, the materials found in the environment are randomized. You consume resources to preserve sanity and can attack the robot to temporarily disable it. You have to survive for a certain amount of time before the round is over. Survive for 10 rounds to win. Each round gets progressively harder (less resources and faster robot movement/detection).
 
 https://docs.google.com/drawings/d/1GYoHn-SyWO8b-bVhteKCuFZDn7f3TTmgD896zbSOpeE/edit
