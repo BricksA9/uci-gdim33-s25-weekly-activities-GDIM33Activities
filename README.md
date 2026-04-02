@@ -17,7 +17,7 @@ I talked with Agnes, who has an interest in RPG action-oriented games. She menti
 
 ### Activity 2
 Genre:\
-Horror, with cel-shaded aesthetics.
+Horror, with cel-shaded aesthetics.\
 Core mechanics and gameplay loop:\
 Explore the environment. This is a loop. Essentially there will be ‘rounds’ where you have to survive against a robot. You enter a room, have a certain amount of time to prepare, before a robot is unleashed on you. Materials are randomized–while the layout of the environment will be the same, the materials found in the environment are randomized. You consume resources to preserve sanity and can attack the robot to temporarily disable it. You have to survive for a certain amount of time before the round is over. Survive for 10 rounds to win. Each round gets progressively harder (less resources and faster robot movement/detection).
 
