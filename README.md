@@ -50,6 +50,35 @@ Yes. For my game, there are 3 primary game states. Menu/lobby, exploratory state
 for resources, and the unleashed state is when the robot has been unleashed and the player is running from them.
 
 ## W4
+Activity 1:
+Goals:
+1. Find if players like the movement system
+2. Find out players’ opinions on enemy (yellow ball)
+
+1. using the left control button as the sprint button causes the tab to close, since ctrl+w close your current tab. I did not know about this before.
+1. using shift to sneak and control to sprint may be odd/unusual, as many games have the shift key as their sprint button.
+2. confusion on what the enemy does
+---------
+Playtesting people:
+zoya
+andy
+julie
+isabel
+kristin
+khang (not in class)
+noah (not in class)
+
+Activity 2:
+Assuming this activity is completed by a programmer, could a writer add more dialogue to this setup without writing any code? Why or why not?\
+Yes. They can add dialogue by creating more DialogueLine scriptableObjects. It doesn't require the writer to write code, but rather fill in the 'line' and the resulting reply node. 
+Everything else is managed by the scriptableObject.\
+
+
+What limit is there to the number of dialogue nodes that the writer could create without writing any code?\
+4, since that's how many buttons fit on screen at once. But in terms of reply chains, it could go on for as long as the writer needs it to be.
+
+In your own words, describe the purpose of the "Regenerate Nodes" button.\
+It refreshes the nodes that you can use in graphs by looking through your project files and seeing if there's anything that can be turned into a node (anything that has the characteristics in the form of methods and classes).
 
 ## W5
 

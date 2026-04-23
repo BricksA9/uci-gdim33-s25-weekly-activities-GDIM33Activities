@@ -5,6 +5,7 @@ using UnityEngine;
 public static class EventNames
 {
   public static string NewDialogueEvent = "NewDialogueEvent";
+
 }
 
 [UnitTitle("On New Dialogue Event")]//The Custom Scripting Event node to receive the Event. Add "On" to the node title as an Event naming convention.
