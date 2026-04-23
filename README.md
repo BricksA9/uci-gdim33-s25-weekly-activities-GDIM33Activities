@@ -50,25 +50,28 @@ Yes. For my game, there are 3 primary game states. Menu/lobby, exploratory state
 for resources, and the unleashed state is when the robot has been unleashed and the player is running from them.
 
 ## W4
-Activity 1:
-Goals:
+Activity 1:\
+Currrent playable state:\
+Movement across a flat plane and robot AI (has 2 completed states - can wander around, and can chase the player depending on proximity)
+
+Goals:\
 1. Find if players like the movement system
 2. Find out players’ opinions on enemy (yellow ball)
 
+---------
+Playtesting people:\
+Zoya
+Andy
+Julie
+Isabel
+Kristin
+
+Playtesting feedback:\
 1. using the left control button as the sprint button causes the tab to close, since ctrl+w close your current tab. I did not know about this before.
 1. using shift to sneak and control to sprint may be odd/unusual, as many games have the shift key as their sprint button.
 2. confusion on what the enemy does
----------
-Playtesting people:
-zoya
-andy
-julie
-isabel
-kristin
-khang (not in class)
-noah (not in class)
 
-Activity 2:
+Activity 2:\
 Assuming this activity is completed by a programmer, could a writer add more dialogue to this setup without writing any code? Why or why not?\
 Yes. They can add dialogue by creating more DialogueLine scriptableObjects. It doesn't require the writer to write code, but rather fill in the 'line' and the resulting reply node. 
 Everything else is managed by the scriptableObject.\
