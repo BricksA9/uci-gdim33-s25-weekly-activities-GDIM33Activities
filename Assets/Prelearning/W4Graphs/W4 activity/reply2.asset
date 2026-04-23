@@ -15,6 +15,6 @@ MonoBehaviour:
   Line: i am a ruffian.
   ReplyOptions:
   - line: bau bau
-    nextNode: {fileID: 0}
+    nextNode: {fileID: 11400000, guid: 8580a4e390af7634a915e91cab11951d, type: 2}
   - line: you are not a ruffian
-    nextNode: {fileID: 0}
+    nextNode: {fileID: 11400000, guid: 8580a4e390af7634a915e91cab11951d, type: 2}

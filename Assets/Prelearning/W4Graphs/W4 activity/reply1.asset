@@ -15,6 +15,6 @@ MonoBehaviour:
   Line: ty for acknowledging me :D
   ReplyOptions:
   - line: ye
-    nextNode: {fileID: 0}
+    nextNode: {fileID: 11400000, guid: 80325daaffc094646b23621094693975, type: 2}
   - line: i actually did NOt acknowledge you
-    nextNode: {fileID: 0}
+    nextNode: {fileID: 11400000, guid: 80325daaffc094646b23621094693975, type: 2}
