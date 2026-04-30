@@ -84,6 +84,7 @@ In your own words, describe the purpose of the "Regenerate Nodes" button.\
 It refreshes the nodes that you can use in graphs by looking through your project files and seeing if there's anything that can be turned into a node (anything that has the characteristics in the form of methods and classes).
 
 ## W5
+Activity 1:
 Goal: item spawning system
 Features:
 -randomly chosen spawn coordinates
@@ -112,6 +113,8 @@ Step 3: Connect C# script to the GameController state machine and ensure it work
 	-Getting the items to despawn part 2–player inventory: do the same things as the previous step, but for the player inventory. 
 	This way, any items the player has in their inventory will be deleted. If successful, when the game is run and the round is over, the items are removed from the player.
 
+Activity 2:
+Completed step 1 and 2, but didn't fully complete step 3 (still need to implement despawning for player inventory)
 ## W6
 
 ## W7
