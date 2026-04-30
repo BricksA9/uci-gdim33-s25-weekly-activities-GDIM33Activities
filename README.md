@@ -84,6 +84,34 @@ In your own words, describe the purpose of the "Regenerate Nodes" button.\
 It refreshes the nodes that you can use in graphs by looking through your project files and seeing if there's anything that can be turned into a node (anything that has the characteristics in the form of methods and classes).
 
 ## W5
+Goal: item spawning system
+Features:
+-randomly chosen spawn coordinates
+	-call on C# code to get spawn locations
+-randomly chosen item
+	-call on C# code to get items
+-resets at the beginning of each new round
+	-removes all instantiated items (refer to W4 in class activity for nodes used) inside of visual scripting. 
+
+
+Step 1: Create spawning locations on the map
+	-These will be empty gameObjects, whose only purpose is to hold the location where an item could appear at.
+
+Step 2: Create C# script with list of items, and a list of spawn locations
+	-script will take random spawn locations, obtained by creating a SerializeField for a list of spawn locations. 
+	It should also take the list of possible items to spawn in; also obtained the same way. Can test via 2 debug logs printing out all items in the lists.\
+	-script will then select a random spawn location using random(). It also selects a random item to spawn at that location. 
+	Can test via a debug log printing out the spawn location gameObject’s name, and a debug log printing out the item that would be spawned there.\
+	-has a method that creates a node that will call the C# code. testable via being able to get the node in any visual scripting graph. Regenerate nodes after creating said method
+
+Step 3: Connect C# script to the GameController state machine and ensure it works as intended
+	-Getting the items to spawn in: connect necessary nodes to access the C# code in the GameController state machine; 
+	specifically inside the LevelLoader state. If successful, when the game is run, items should spawn at the predetermined locations.\
+	-Getting the items to despawn: connect a For Each loop that deletes all items in the spawnedItems parent GameObject, similar to the W4 in-class activity. 
+	If successful, when the game is run and the round is over, the items are despawned from both the environment and the player.\
+	-Getting the items to despawn part 2–player inventory: do the same things as the previous step, but for the player inventory. 
+	This way, any items the player has in their inventory will be deleted.\
+
 
 ## W6
 
