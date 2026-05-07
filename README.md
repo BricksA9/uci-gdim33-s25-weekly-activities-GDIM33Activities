@@ -115,6 +115,52 @@ Step 3: Connect C# script to the GameController state machine and ensure it work
 
 Activity 2:
 Completed step 1 and 2, but didn't fully complete step 3 (still need to implement despawning for player inventory)
+
 ## W6
+Activity 1:\
+Currrent playable state:\
+New features include...
+1. Items!
+2. Item spawning system (random spawn location and random items)
+3. Player inventory (UI is not finished yet)
+Also adjusted player speed.
+
+Link:
+https://asphalt-asurada.itch.io/hylan-hotel-milestone-2
+
+Goals:\
+1. Find if players like using the items
+2. Opinions on the item spawning system
+
+Noah: likes the item system, but there should be an indicator that tells you when you can pick up an item
+Kristin: likes the items, but wishes the monster would be bigger or easier to see
+Andy: likes the items, but did not know what the win or loss condition was.
+For all 3, controls were not intuitive besides for the WASD keys.
+
+Activity 2:\
+
+1.Why does the Multiply setting of the Blend node make the resulting color darker and less saturated than the input colors?\
+Hint 1: The Multiply option literally multiplies the values given, so a vector A = (R1, G1, B1) Blended with a vector B = (R2, G2, B2) with the Multiply option will result in a vector C = (R1*R2, G1*G2, B1*B2).
+Hint 2: recall that we store the RGB channels as 0.0 - 1.0 values.
+Since a value closer to 0 results in a darker/less saturated color, multiplying all channels results in a darker value because the resulting number is lower than the two original numbers. 
+
+2. If we use Multiply to combine Alpha values, will the resulting value be more or less translucent than either of the original values, and why?\
+It becomes more transparent as the resulting value gets closer to 0.
+
+3. When we created the SampleTexture2D node, Unity auto-created the UV0 Node for us to get the UV coordinates for sampling the texture. 
+Where does the shader get these UV values from?\
+It gets it from the texture.
+
+4. You just learned that you can manipulate colors with math. Does that sound interesting or exciting to you?\
+Pretty interesting because it's similar to Blender's material editing process.
 
 ## W7
+
+
+## W8
+
+
+## W9
+
+
+## W10
