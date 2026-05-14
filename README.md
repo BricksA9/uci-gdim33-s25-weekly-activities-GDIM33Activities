@@ -156,28 +156,35 @@ Pretty interesting because it's similar to Blender's material editing process.
 
 ## W7
 1. For our vertex color shader in step (3), where did the data for the Vertex Color node come from?
+
 The vertices on the shiba model.
 
 2. Since vertex color is stored as data in each vertex of the mesh, why is the color on our shiba from step (3) blended at the edges of different regions of color?
+
 It is approximating, based on the data from each vertex that makes up a face, what colors should be between the vertices.
 
 3. Why is the shiba from step (3), which is colored with vertex color, less detailed than the shiba we rendered with a texture in last week’s activity? 
 Given that vertex color generally results in a less detailed color application than applying a texture, what can you imagine vertex color is useful for?
+
 The color info stored in each vertex can only be used to approximate the colors in between, which is not as detailed as having a UV map that has the exact color mappings between each vertex. 
 It'd probably be more useful for low detail/low poly models, or quickly testing colors for a model.
 
 4. Based on the color of the shiba in step (4), does anything look wrong with the mesh’s vertex normals?
+
 There are some locations on the mesh that have a sharp change in color. For example, there is a big change in color on the model's back left leg, where 2 vertices' normals seem to be rotated the wrong way.
 
 5. We used the color output of a shader to visualize a mesh’s vertex normal values in step (4). 
 Name one other piece of vertex data (or any kind of data) you can imagine testing with a debug shader like this, and describe why that might be useful.
+
 Since we animated something using UVs, it might be helpful to check the associated position that a vertex has to a UV map. If you had a wave animation, you could use it to
 check whether the model would have smooth lighting.
 
 6. Why is there an error in the lighting in step (5) on the back of the Shiba?
+
 Its normals on those two vertices are angled incorrectly.
 
 7. Why do you think we set the Blend Mode to Additive for the fire effect in Step (6)?
+
 It keeps the darkened sections of the fire effect transparent because the Blend Mode changes how colors are calculated with the material of the fire effect itself and the colors behind it.
 Since there is an alpha channel, it needs to account for everything behind the fire effect. Multiply would have taken the color of the materials behind the fire effect, and multiplied it by
 fire effect. So the whole effect gets darker because multiplied color values have a value that's lower than the original two. However, additive only adds the values. So if something is transparent 
