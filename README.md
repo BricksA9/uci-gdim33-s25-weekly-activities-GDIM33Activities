@@ -193,13 +193,52 @@ fire effect. So the whole effect gets darker because multiplied color values hav
 ## W8
 ### Activity 1
 What is new:
+Polished bat functionality, and updated main menu cutscenes.
 
-[Link](https://asphalt-asurada.itch.io/hylan-hotel-milestone-3)
+[Link](https://asphalt-asurada.itch.io/hylan-hotel-milestone-3) to new build
 
 Playtesting Goals:
+-Find out if players can play the entire game without any assistance.
+-Find out if players are going out of bounds or struggling (dying quickly to the robot)
+-Whether any in-game feedback is confusing.
 
+Playtesters and their feedback:
+Noah:
+-Had no trouble playing through the rest of the levels once he understood the controls. 
+-Died the first round. Why? "It's hard to tell when the enemy is on you or not." However, once he understood the objective, it was quite easy to win all levels.
+-Went out of bounds at level 5
+General feedback:
+	-not a ton of player feedback
+	-dont know when they are hit by the robot
+	-no solid goal other than to sit in the corner of the map
+	-speed effect understood
+	-bat mechanic not understood. Couldn't tell what the bat would be used for.
+
+Julie:
+-Did not know how to use items
+-UI could be clearer to know when you are holding an item in your inventory
+-Clipped out of bounds several times when near the stairs
 
 ### Activity 2C
+1. Open the Frame Debugger window under Windows >Analysis > Frame Debugger. What's the name of the pass associated with the post-processing effect we created? 
+Other than the name being kinda obvious, how can you tell?
+
+FullScreenPassRendererFeature. We can also tell by checking what shader is being used in the draw call. The pass has a draw call that is using the TestPostEffect shader.
+
+2. What does the screen look like if the Lerp value is set to 0.5? What about 0? What about 1?
+
+0.5: equally blended between the cobblestone texture and the regular scene.
+0: cobblestone texture cannot be seen at all.
+1: cobblestone texture covers the entire scene, and only the tomatoCat can be seen.
+
+3. WHY does the screen look like that based on those different Lerp values?
+
+The lerp value determines how much the cobblestone texture should be shown. It's kind of like the alpha channel, where 0 is fully transparent and 1 is fully opaque.
+
+4. Why does our algorithm for the Lerp amount use (sin(time)+1)/2 instead of just sin(time)?
+
+The sin curve oscillates between -1 and 1, which we don't want half of (anything less than 0 just means the entire effect disappears, and the screen gets brighter). To fix this, we need
+to add time+1 and then divide by 2, so that it oscillates only between 0 and 1.
 
 ## W9
 
