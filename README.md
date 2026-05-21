@@ -191,7 +191,15 @@ fire effect. So the whole effect gets darker because multiplied color values hav
 (has an alpha value of 1), adding a color behind it (probably a value of less than 1) doesn't change anything, and allows it to remain transparent.
 
 ## W8
+### Activity 1
+What is new:
 
+(Link)[https://asphalt-asurada.itch.io/hylan-hotel-milestone-3]
+
+Playtesting Goals:
+
+
+### Activity 2C
 
 ## W9
 
