@@ -194,7 +194,7 @@ fire effect. So the whole effect gets darker because multiplied color values hav
 ### Activity 1
 What is new:
 
-(Link)[https://asphalt-asurada.itch.io/hylan-hotel-milestone-3]
+[Link](https://asphalt-asurada.itch.io/hylan-hotel-milestone-3)
 
 Playtesting Goals:
 
