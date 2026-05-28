@@ -5,11 +5,11 @@ Mood board
 https://docs.google.com/drawings/d/1hSHmBo_q8wHiGlY9Ql2y9L7SmEXqM5fOtnJkqHCPkcs/edit?usp=sharing
 
 1. What patterns are emerging from your inspiration sources- are there any particular gameplay mechanics, genres, 
-or non-game-related aesthetics you’re consistently interested in?\
+or non-game-related aesthetics youï¿½re consistently interested in?\
 Genres: anime, nature, perhaps horror?
 Gameplay mechanics: exploration, building, surprise jumpscares
 
-2. Chat with at least one of your table mates about what they’re interested in building. How are your personal styles and interests similar?\
+2. Chat with at least one of your table mates about what theyï¿½re interested in building. How are your personal styles and interests similar?\
 Zom shares a love for singleplayer exploration-oriented games like Death Stranding, as well as anime/cel-shaded aesthetics on occasion. 
 
 3. Chat with your table's LA about their taste in games. How are their tastes similar to yours?\
@@ -19,7 +19,7 @@ I talked with Agnes, who has an interest in RPG action-oriented games. She menti
 Genre:\
 Horror, with cel-shaded aesthetics.\
 Core mechanics and gameplay loop:\
-Explore the environment. This is a loop. Essentially there will be ‘rounds’ where you have to survive against a robot. You enter a room, have a certain amount of time to prepare, before a robot is unleashed on you. Materials are randomized–while the layout of the environment will be the same, the materials found in the environment are randomized. You consume resources to preserve sanity and can attack the robot to temporarily disable it. You have to survive for a certain amount of time before the round is over. Survive for 10 rounds to win. Each round gets progressively harder (less resources and faster robot movement/detection).
+Explore the environment. This is a loop. Essentially there will be ï¿½roundsï¿½ where you have to survive against a robot. You enter a room, have a certain amount of time to prepare, before a robot is unleashed on you. Materials are randomizedï¿½while the layout of the environment will be the same, the materials found in the environment are randomized. You consume resources to preserve sanity and can attack the robot to temporarily disable it. You have to survive for a certain amount of time before the round is over. Survive for 10 rounds to win. Each round gets progressively harder (less resources and faster robot movement/detection).
 
 https://docs.google.com/drawings/d/1GYoHn-SyWO8b-bVhteKCuFZDn7f3TTmgD896zbSOpeE/edit
 
@@ -56,7 +56,7 @@ Movement across a flat plane and robot AI (has 2 completed states - can wander a
 
 Goals:\
 1. Find if players like the movement system
-2. Find out players’ opinions on enemy (yellow ball)
+2. Find out playersï¿½ opinions on enemy (yellow ball)
 
 ---------
 Playtesting people:\
@@ -102,7 +102,7 @@ Step 2: Create C# script with list of spawnable items, and a list of spawn locat
 	-Script will then check whether the location already has an object in it. Whenever the script selects a spawn location, 
 	remove that spawn location gameObject from the list. Can test using a debug log that prints out the remaining items in the list.
 	-Script will then select a random spawn location using random(). It also selects a random item to spawn at that location. Can 
-	test via a debug log printing out the spawn location gameObject’s name, and a debug log printing out the item that would be spawned there.
+	test via a debug log printing out the spawn location gameObjectï¿½s name, and a debug log printing out the item that would be spawned there.
 	-Has a method that creates a node that will call the C# code. testable via being able to get the node in any visual scripting graph. 
 	Regenerate nodes after creating said method.
 Step 3: Connect C# script to the GameController state machine and ensure it works as intended
@@ -110,7 +110,7 @@ Step 3: Connect C# script to the GameController state machine and ensure it work
 	specifically inside the LevelLoader state. If successful, when the game is run, items should spawn at the predetermined locations.
 	-Getting the items to despawn: connect a For Each loop that deletes all items in the spawnedItems parent GameObject, 
 	similar to the W4 in-class activity. If successful, when the game is run and the round is over, the items are despawned from the environment.
-	-Getting the items to despawn part 2–player inventory: do the same things as the previous step, but for the player inventory. 
+	-Getting the items to despawn part 2ï¿½player inventory: do the same things as the previous step, but for the player inventory. 
 	This way, any items the player has in their inventory will be deleted. If successful, when the game is run and the round is over, the items are removed from the player.
 
 Activity 2:
@@ -163,17 +163,17 @@ The vertices on the shiba model.
 
 It is approximating, based on the data from each vertex that makes up a face, what colors should be between the vertices.
 
-3. Why is the shiba from step (3), which is colored with vertex color, less detailed than the shiba we rendered with a texture in last week’s activity? 
+3. Why is the shiba from step (3), which is colored with vertex color, less detailed than the shiba we rendered with a texture in last weekï¿½s activity? 
 Given that vertex color generally results in a less detailed color application than applying a texture, what can you imagine vertex color is useful for?
 
 The color info stored in each vertex can only be used to approximate the colors in between, which is not as detailed as having a UV map that has the exact color mappings between each vertex. 
 It'd probably be more useful for low detail/low poly models, or quickly testing colors for a model.
 
-4. Based on the color of the shiba in step (4), does anything look wrong with the mesh’s vertex normals?
+4. Based on the color of the shiba in step (4), does anything look wrong with the meshï¿½s vertex normals?
 
 There are some locations on the mesh that have a sharp change in color. For example, there is a big change in color on the model's back left leg, where 2 vertices' normals seem to be rotated the wrong way.
 
-5. We used the color output of a shader to visualize a mesh’s vertex normal values in step (4). 
+5. We used the color output of a shader to visualize a meshï¿½s vertex normal values in step (4). 
 Name one other piece of vertex data (or any kind of data) you can imagine testing with a debug shader like this, and describe why that might be useful.
 
 Since we animated something using UVs, it might be helpful to check the associated position that a vertex has to a UV map. If you had a wave animation, you could use it to
@@ -241,6 +241,24 @@ The sin curve oscillates between -1 and 1, which we don't want half of (anything
 to add time+1 and then divide by 2, so that it oscillates only between 0 and 1.
 
 ## W9
+### Activity 1
+Step 1: 
+Game selected: Pyre
 
+Step 2:
+1. Disappearance of the dialogue box, as if it was being burnt: probably a material on an object, and might be done with two UI layers: the unburnt paper, and the burnt paper.
+There would be a noise texture that would be used to sample the location that the UI layer is removed from, and something that controls the threshold and speed at which the unburnt paper disappears at.
+
+2. Procedural blue fire effect: probably another material on an object, done by having an image texture of the fire, animated by time and moving it through some sort of filter. In terms of the color,
+it could use the distance that the texture is from the bottom of the object, and change its color (from bright blue to darker blue) depending on distance.
+
+### Activity 2
+
+Screenshot of the shadergraph I worked on during class:
+![alt text](image.png)
+
+Problem: the vignette was flashing between black and being transparent, instead of switching from the intended image and being transparent.
+How I solved it: Instead of using the multiply node to combine the inputs of the image texture and the rendered image, I used the blend node, which allowed me to use the transparency in the image texture.
+Multiply doesn't have an option for transparency since it's just taking the pixel values of each input and multiplying them together. 
 
 ## W10
