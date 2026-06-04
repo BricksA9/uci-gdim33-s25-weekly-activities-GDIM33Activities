@@ -262,3 +262,38 @@ How I solved it: Instead of using the multiply node to combine the inputs of the
 Multiply doesn't have an option for transparency since it's just taking the pixel values of each input and multiplying them together. 
 
 ## W10
+### Activity 1
+
+1. New things:
+-new fog sphere occludes player visibility. It uses a shadergraph
+2. [Link] (https://asphalt-asurada.itch.io/hylan-hotel-final) to game
+3. Goals:
+Figure out if people understand what the fog is, and whether it serves its purpose (to hide information like items, terrain, and the robot)
+
+#### Playtesting notes
+Elijah: 
+1. fog sphere looks like dust storm
+2. forgot controls again
+3. cannot tell if player is sprinting
+4. forgot main objective (survive)
+5. did not know what item they were holding, suggests adding a UI icon for held items.
+
+Brandon Tsai:
+1. Movement feels good
+2. Add something for more realistic camera, i.e. wobble
+3. Did not recognize the enemy
+4. Did not use items at all during the first round
+5. Did not know what the objective
+
+### Activity 2
+
+The strategy is to try planning out all of your game's systems. Start in your head, and as soon as you get confused on a system you need to make (i.e. an inventory), diagram or sketch out the system. This way, the logic can be solved. Additionally, it can sometimes reveal problematic interactions with other systems (i.e. the system of the player interacting with the inventory might be an entirely different system that needs to be mapped out). Once you figure that out, then the scope of the project becomes much clearer. It also helps to mark down concepts that you know you can confidently execute, and ones that you might need to research or ask for help on.
+
+Other steps:
+1. Add buffer time between certain steps
+2. Change the little tasks or do small tasks first
+3. Using the breakdown process that was used for this class
+4. Making systems that can be easily adjusted for future parameter changes (i.e. balancing the game)
+
+### Activity 3
+Improvement made to game: robot now has a proper model and animations.
